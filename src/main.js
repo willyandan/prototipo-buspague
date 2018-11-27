@@ -1,8 +1,20 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
 
-Vue.config.productionTip = false
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
+import { library } from '@fortawesome/fontawesome-svg-core'
+import  fonts from "./fonts";
+import App from './App.vue';
+import 'bootstrap';
+
+
+library.add(fonts)
+Vue.component('fw-i', FontAwesomeIcon)
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  el: '#app',
+  components:{
+    App
+  },
+  render: h=> h(App)
+});
+
