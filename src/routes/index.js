@@ -13,6 +13,7 @@ import ProdutoForm from "./produto-form"
 import Login from "./login"
 Vue.use(Router)
 const router = new Router({
+  base: '/prototipo-buspague',
   mode:'history',
   routes:[
     {
